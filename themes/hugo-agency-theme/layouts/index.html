@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+  {{ partial "head.html" . }}
+
+  <body id="page-top" class="index">
+    {{ partial "nav.html" . }}
+    {{ partial "hero.html" . }}
+
+    {{ if .Site.Params.goals.enable }}
+      {{ partial "goals.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.corpus.enable }}
+      {{ partial "corpus.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.search.enable }}
+      {{ partial "search.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.members_list.enable }}
+      {{ partial "members.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.publications_list.enable }}
+      {{ partial "publications.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.clients_list.enable }}
+      {{ partial "clients.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.contact.enable }}
+      {{ partial "contact.html" . }}
+    {{ end }}
+
+    {{ if .Site.Params.footer.enable }}
+      {{ partial "footer.html" . }}
+    {{ end }}
+
+    {{ partial "js.html" . }}
+  </body>
+</html>

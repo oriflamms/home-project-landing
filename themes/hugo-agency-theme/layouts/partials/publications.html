@@ -1,0 +1,28 @@
+{{ "<!-- Publications Section -->" | safeHTML }}
+<section id="publications" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ with .Site.Params.publications_list.title }}{{ . | markdownify }}{{ end }}</h2>
+      </div>
+    </div>
+    <div class="row flexbox{{ if .Site.Params.publications_list.center }} flexbox-center{{ end }}">
+      <div class="col-lg-12">
+        <h3>On HIMANIS corpus</h3>
+        <ul>
+          {{ range .Site.Params.publications.himanis }}
+          {{ $url := printf "https://doi.org/%s" .doi }}
+          <li>{{ .name }}, DOI: <a href="{{ $url }}">{{ .doi }}</a>, {{ .year }}</li>
+          {{ end }}
+        </ul>
+        <h3>On other corpora</h3>
+        <ul>
+          {{ range .Site.Params.publications.other }}
+            {{ $url := printf "https://doi.org/%s" .doi }}
+            <li>{{ .name }}, DOI: <a href="{{ $url }}">{{ .doi }}</a>, {{ .year }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

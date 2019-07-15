@@ -1,0 +1,350 @@
+# Site settings
+baseurl = ""
+languageCode = "fr-FR"
+title = "HIMANIS Project"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "HIMANIS"
+  description = "The HIMANIS project"
+  # email = "your@email.com"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "This page cannot be found"
+    text = "[Go back to the site](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "HIMANIS"
+    # Optional logo as brand stored in img/
+    #logo = "logo.svg"
+    goals = "Goals"
+    corpus = "Corpus"
+    search = "Search"
+    members = "Members"
+    publications = "Publications"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    #[[menu.postpend]]
+    #  url = "http://gohugo.io"
+    #  name = "External link"
+    #  weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "The HIMANIS project"
+    subtitle = "Indexing the Trésor des Chartes registers"
+    buttonText = "Tell me more"
+
+
+  # Goals section
+  [params.goals]
+    enable = true
+    title = "Goals"
+    subtitle1 = "*Manuscripts* are among the most important witnesses to our European shared cultural heritage. Despite a large digitization, the wealth of their content remains largely inaccessible : current handwritten text recognition technology is not accurate enough to allow full text search. This situation raises the need of searching approaches specifically designed for text images."
+    subtitle2 = "**HIMANIS** aims at developing cost-effective solutions for querying large sets of handwritten document images."
+
+    [[params.goals.row]]
+
+    [[params.goals.row.list]]
+      icon = "fa-laptop"
+      title = "Transcription and Indexing"
+      description = "a new indexing/searching technology for historical manuscripts"
+
+    [[params.goals.row.list]]
+      icon = "fa-search-plus"
+      title = "Full text search"
+      description = "a new paradigm to study our historical heritage, as conveyed by manuscripts, by using full text search technology."
+
+    [[params.goals.row.list]]
+      icon = "fa-eur"
+      title = "History of Europe"
+      description = "a new vision of the raise of nation states in Europe via a new study of the corpus under this paradigm."
+
+
+  # Corpus section
+  [params.corpus]
+    enable = true
+    title = "The Chancery Corpus"
+    content = "The \"Tresor des Chartes\" is the most valuable and iconic archive of the French kings and has been built as a collection as early as in the 13th c. Within the \"Tresor\", the collection of medieval registers (aka \"Chancery corpus\") stand out. They keep record of the charters, grants and privileges given by the king of France and were produced directly by the French royal chancery. Dating from 1302 to 1483, they contain ca. 68,000 charters and documents. This large and iconic collection bears witness to the rationalization of late medieval administration and is a key source to our understanding of medieval Europe and the rise of centralized nation state on the continent as a consequence of the long lasting wars between France and England."
+
+    # All images are stored under 'static/img/corpus'.
+
+    [[params.corpus.images]]
+      img = "sample_3.jpg"
+
+    [[params.corpus.images]]
+      img = "sample_1.jpg"
+
+    [[params.corpus.images]]
+      img = "sample_2.jpg"
+
+
+  # Search section
+  [params.search]
+    enable = true
+    title = "HIMANIS Search engine"
+    subtitle = "The 60,000 most relevant pages of the Trésor des Chartes have been made searchable thanks to a novel indexing technique specially designed in HIMANIS for manuscript images.  A simple, preliminary interface to this index is provided here."
+    helptitle = "Enter your query"
+    helptext = "you can search for individual words and word combinations. More details about how to use this search interface, along with examples of queries, can be found [here](https://himanis.hypotheses.org/105)"
+    # Form method
+    method = "GET"
+    # Form URL
+    url = "http://prhlt-kws.prhlt.upv.es/himanis/"
+    # Form input placeholder text
+    label = "Keyword"
+    # Form input name (sent in the request)
+    inputname = "q"
+    # Form search button text
+    button = "SEARCH"
+
+
+  # Members section
+  [params.members_list]
+    enable = true
+    center = true
+    title = "Members"
+    partnerstitle = "Partners"
+
+    [[params.members_list.members]]
+      icon = "fa-pencil"
+      name = "Institut de recherche et d'histoire des textes"
+      url = "http://www.irht.cnrs.fr/"
+      location = "Paris, France"
+      description = "CNRS institute devoted to fundamental research on medieval manuscripts and early printed books."
+
+    [[params.members_list.members]]
+      icon = "fa-laptop"
+      name = "A2iA"
+      url = "http://www.a2ia.com/en"
+      location = "Paris, France"
+      description = "The global leader in handwriting recognition, text extraction and document classification software."
+
+    [[params.members_list.members]]
+      icon = "fa-flask"
+      name = "Pattern Recognition and Human Language Technology"
+      url = "http://www.prhlt.upv.es/"
+      location = "Valencia, Spain"
+      description = "Universitat Politècnica de València research center dedicated to Multimodal Interaction, Pattern Recognition, Image Processing and Language Processing"
+
+    [[params.members_list.members]]
+      icon = "fa-flask"
+      name = "Artificial Intelligence and Cognitive Engineering"
+      url = "http://www.rug.nl/research/alice/"
+      location = "Groningen, The Netherlands"
+      description = "Research center covering Cognitive Modeling, Multi-Agent Systems, Autonomous Perceptive Systems, Sensory Cognition."
+
+    [[params.members_list.partners]]
+      name = "Teklia"
+      url = "http://www.teklia.com"
+      location = "France"
+      description = "Machine Learning and Deep Learning Agency specialized on Data Science and Data Viz"
+
+    [[params.members_list.partners]]
+      name = "Archives Nationales"
+      url = "http://www.archives-nationales.culture.gouv.fr/"
+      location = "France"
+      description = "The French national Archive public service"
+
+    [[params.members_list.partners]]
+      name = "Bibliothèque Nationale de France"
+      url = "http://www.bnf.fr/"
+      location = "France"
+      description = "Collect, preserve, enrich and make available the French national documentary heritage"
+
+
+  # Publications section
+  [params.publications_list]
+    enable = true
+    center = true
+    title = "Publications"
+
+    [[params.publications.himanis]]
+      name = "Preparatory KWS Experiments for Large-Scale Indexing of a Vast Medieval Manuscript Collection in the HIMANIS Project."
+      doi = "10.1109/ICDAR.2017.59"
+      year = "2017"
+
+    [[params.publications.other]]
+      name = "HMM word graph based keyword spotting in handwritten document images."
+      doi = "10.1016/j.ins.2016.07.063"
+      year = "2016"
+
+    [[params.publications.other]]
+      name = "Word graphs size impact on the performance of handwriting document applications."
+      doi = "10.1007/s00521-016-2336-2"
+      year = "2017"
+
+    [[params.publications.other]]
+      name = "Handwriting Transcription and Keyword Spotting in Historical Daily Records Documents."
+      doi = "10.1109/DAS.2016.70"
+      year = "2016"
+
+    [[params.publications.other]]
+      name = "Two Methods to Improve Confidence Scores for Lexicon-free Word Spotting in Handwritten Text."
+      doi = "10.1109/ICFHR.2016.0072"
+      year = "2016"
+
+    [[params.publications.other]]
+      name = "Querying out-of-vocabulary words in lexicon-based keyword spotting."
+      doi = "10.1007/s00521-016-2197-8"
+      year = "2017"
+
+    [[params.publications.other]]
+      name = "Simple and Effective Multi-word Query Spotting in Handwritten Text Images."
+      doi = "10.1007/978-3-319-58838-4_9"
+      year = "2017"
+
+    [[params.publications.other]]
+      name = "Overview of the ImageCLEF 2016 handwritten scanned document retrieval task."
+      doi = "10.5281/zenodo.52994"
+      year = "2016"
+
+    [[params.publications.other]]
+      name = "ICFHR2016 Handwritten Keyword Spotting Competition (H-KWS 2016)"
+      doi = "10.1109/ICFHR.2016.0117"
+      year = "2016"
+
+
+  # Client section
+  [params.clients_list]
+    enable = true
+    # Possibility to center items
+    #center = true
+    # Optional client title specifying the involvement
+    #title = "Used and trusted by"
+
+    # All the clients' logos are stored under 'static/img/logos'.
+    # Replace them with your clients's logos.
+    # Suggestion: .svg in the size of 280px*80px looks good
+    [[params.clients]]
+      logo = "logo_irht.png"
+      link = "#"
+
+    [[params.clients]]
+      logo = "logo_a2ia.png"
+      link = "#"
+
+    [[params.clients]]
+      logo = "logo_upv.png"
+      link = "#"
+
+    [[params.clients]]
+      logo = "logo_alice.png"
+      link = "#"
+
+  # Contact section
+  [params.contact]
+    #enable = false
+    title = "Contact us"
+    subtitle  = ""
+    buttonText = "Send message"
+    # netlify = true
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    #email = "kermorvant@teklia.com"
+
+    # Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at mail@example.com instead."
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Your Name *"
+      warning = "Please enter your name."
+
+    [params.contact.form.email]
+      text = "Your Email *"
+      warning = "Please enter your email address."
+
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Your Message *"
+      warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Copyright © HIMANIS 2018 by TEKLIA"
+
+    #[[params.footer.social]]
+    #  icon = "fa-facebook"
+    #  link = "#"
+    #  title = "Facebook"
+
+    #[[params.footer.quicklinks]]
+    #  text = "Privacy Policy"
+    #  link = "#"
