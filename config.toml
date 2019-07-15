@@ -1,7 +1,7 @@
 # Site settings
 baseurl = ""
 languageCode = "fr-FR"
-title = "HIMANIS Project"
+title = "HOME Project"
 theme = "hugo-agency-theme"
 
 # Enter your tracking code to enable Google Analytics
@@ -17,8 +17,8 @@ googleAnalytics = ""
 
   # To provide some metadata for search engines feel free to add a few
   # information about you and your website.
-  name = "HIMANIS"
-  description = "The HIMANIS project"
+  name = "HOME"
+  description = "The HOME project"
   # email = "your@email.com"
 
   # Link custom assets relative to /static
@@ -46,7 +46,7 @@ googleAnalytics = ""
 
   # Navigation
   [params.navigation]
-    brand = "HIMANIS"
+    brand = "HOME"
     # Optional logo as brand stored in img/
     #logo = "logo.svg"
     goals = "Goals"
@@ -77,8 +77,8 @@ googleAnalytics = ""
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title = "The HIMANIS project"
-    subtitle = "Indexing the Trésor des Chartes registers"
+    title = "The HOME project"
+    subtitle = "Indexing european charters and cartularies"
     buttonText = "Tell me more"
 
 
@@ -87,7 +87,7 @@ googleAnalytics = ""
     enable = true
     title = "Goals"
     subtitle1 = "*Manuscripts* are among the most important witnesses to our European shared cultural heritage. Despite a large digitization, the wealth of their content remains largely inaccessible : current handwritten text recognition technology is not accurate enough to allow full text search. This situation raises the need of searching approaches specifically designed for text images."
-    subtitle2 = "**HIMANIS** aims at developing cost-effective solutions for querying large sets of handwritten document images."
+    subtitle2 = "**HOME** aims at developing cost-effective solutions for querying large sets of handwritten document images."
 
     [[params.goals.row]]
 
@@ -128,7 +128,7 @@ googleAnalytics = ""
   # Search section
   [params.search]
     enable = true
-    title = "HIMANIS Search engine"
+    title = "HOME Search engine"
     subtitle = "The 60,000 most relevant pages of the Trésor des Chartes have been made searchable thanks to a novel indexing technique specially designed in HIMANIS for manuscript images.  A simple, preliminary interface to this index is provided here."
     helptitle = "Enter your query"
     helptext = "you can search for individual words and word combinations. More details about how to use this search interface, along with examples of queries, can be found [here](https://himanis.hypotheses.org/105)"
@@ -160,10 +160,10 @@ googleAnalytics = ""
 
     [[params.members_list.members]]
       icon = "fa-laptop"
-      name = "A2iA"
-      url = "http://www.a2ia.com/en"
-      location = "Paris, France"
-      description = "The global leader in handwriting recognition, text extraction and document classification software."
+      name = "Teklia"
+      url = "http://www.teklia.com"
+      location = "France"
+      description = "Machine Learning and Deep Learning Agency specialized on Data Science and Data Viz"
 
     [[params.members_list.members]]
       icon = "fa-flask"
@@ -173,17 +173,12 @@ googleAnalytics = ""
       description = "Universitat Politècnica de València research center dedicated to Multimodal Interaction, Pattern Recognition, Image Processing and Language Processing"
 
     [[params.members_list.members]]
-      icon = "fa-flask"
-      name = "Artificial Intelligence and Cognitive Engineering"
-      url = "http://www.rug.nl/research/alice/"
-      location = "Groningen, The Netherlands"
-      description = "Research center covering Cognitive Modeling, Multi-Agent Systems, Autonomous Perceptive Systems, Sensory Cognition."
+      icon = "fa-pencil"
+      name = "Národní archiv"
+      url = "http://www.nacr.cz"
+      location = "Prague, Czech Republic-"
+      description = ""s
 
-    [[params.members_list.partners]]
-      name = "Teklia"
-      url = "http://www.teklia.com"
-      location = "France"
-      description = "Machine Learning and Deep Learning Agency specialized on Data Science and Data Viz"
 
     [[params.members_list.partners]]
       name = "Archives Nationales"
@@ -209,46 +204,7 @@ googleAnalytics = ""
       doi = "10.1109/ICDAR.2017.59"
       year = "2017"
 
-    [[params.publications.other]]
-      name = "HMM word graph based keyword spotting in handwritten document images."
-      doi = "10.1016/j.ins.2016.07.063"
-      year = "2016"
-
-    [[params.publications.other]]
-      name = "Word graphs size impact on the performance of handwriting document applications."
-      doi = "10.1007/s00521-016-2336-2"
-      year = "2017"
-
-    [[params.publications.other]]
-      name = "Handwriting Transcription and Keyword Spotting in Historical Daily Records Documents."
-      doi = "10.1109/DAS.2016.70"
-      year = "2016"
-
-    [[params.publications.other]]
-      name = "Two Methods to Improve Confidence Scores for Lexicon-free Word Spotting in Handwritten Text."
-      doi = "10.1109/ICFHR.2016.0072"
-      year = "2016"
-
-    [[params.publications.other]]
-      name = "Querying out-of-vocabulary words in lexicon-based keyword spotting."
-      doi = "10.1007/s00521-016-2197-8"
-      year = "2017"
-
-    [[params.publications.other]]
-      name = "Simple and Effective Multi-word Query Spotting in Handwritten Text Images."
-      doi = "10.1007/978-3-319-58838-4_9"
-      year = "2017"
-
-    [[params.publications.other]]
-      name = "Overview of the ImageCLEF 2016 handwritten scanned document retrieval task."
-      doi = "10.5281/zenodo.52994"
-      year = "2016"
-
-    [[params.publications.other]]
-      name = "ICFHR2016 Handwritten Keyword Spotting Competition (H-KWS 2016)"
-      doi = "10.1109/ICFHR.2016.0117"
-      year = "2016"
-
+    
 
   # Client section
   [params.clients_list]
