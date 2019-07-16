@@ -177,7 +177,7 @@ googleAnalytics = ""
       name = "Národní archiv"
       url = "http://www.nacr.cz"
       location = "Prague, Czech Republic-"
-      description = ""s
+      description = ""
 
 
     [[params.members_list.partners]]
