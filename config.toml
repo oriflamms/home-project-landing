@@ -78,7 +78,7 @@ googleAnalytics = ""
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
     title = "The HOME project"
-    subtitle = "Indexing european charters and cartularies"
+    subtitle = "History of medieval Europe"
     buttonText = "Tell me more"
 
 
@@ -204,7 +204,7 @@ googleAnalytics = ""
       doi = "10.1109/ICDAR.2017.59"
       year = "2017"
 
-    
+
 
   # Client section
   [params.clients_list]
@@ -222,7 +222,7 @@ googleAnalytics = ""
       link = "#"
 
     [[params.clients]]
-      logo = "logo_a2ia.png"
+      logo = "logo_teklia.png"
       link = "#"
 
     [[params.clients]]
@@ -230,7 +230,7 @@ googleAnalytics = ""
       link = "#"
 
     [[params.clients]]
-      logo = "logo_alice.png"
+      logo = "logo_na.jpg"
       link = "#"
 
   # Contact section
