@@ -111,8 +111,13 @@ googleAnalytics = ""
   # Corpus section
   [params.corpus]
     enable = true
-    title = "The Chancery Corpus"
-    content = "The \"Tresor des Chartes\" is the most valuable and iconic archive of the French kings and has been built as a collection as early as in the 13th c. Within the \"Tresor\", the collection of medieval registers (aka \"Chancery corpus\") stand out. They keep record of the charters, grants and privileges given by the king of France and were produced directly by the French royal chancery. Dating from 1302 to 1483, they contain ca. 68,000 charters and documents. This large and iconic collection bears witness to the rationalization of late medieval administration and is a key source to our understanding of medieval Europe and the rise of centralized nation state on the continent as a consequence of the long lasting wars between France and England."
+    title = "Corpus: Charters and Cartularies"
+    content = "HOME will establish a very large-scale digital dataset, based on the expertise of IRHT and NACR partners: 
+    -	170 already digitized and indexed registers from the French royal chancery;
+    -	2800 medieval cartularies and register books in Czech Republic and in France;
+    -	43 000 (already digitized) documents from the archives of the Czech Republic in Monasterium, including 22 760 charters held by National Archives in Prague. 
+    HOME also establishes a link with Monasterium.net.
+    "
 
     # All images are stored under 'static/img/corpus'.
 
@@ -125,18 +130,26 @@ googleAnalytics = ""
     [[params.corpus.images]]
       img = "sample_2.jpg"
 
+[[params.corpus.images]]
+img = "Abbeville_114_IRHT_179723.jpg"
+
+[[params.corpus.images]]
+img = "Angers_ADML_H1773.png"
+
+[[params.corpus.images]]
+img = "Angers_ADML_H3714.png"
 
   # Search section
   [params.search]
     enable = true
-    title = "HOME Search engine"
-    subtitle = "The 60,000 most relevant pages of the Trésor des Chartes have been made searchable thanks to a novel indexing technique specially designed in HIMANIS for manuscript images.  A simple, preliminary interface to this index is provided here."
+    title = "HIMANIS Search engine"
+    subtitle = "A first search engine has been established by the partners in HIMANIS and now in HOME. The 80,000 most relevant pages of the Trésor des Chartes have been made searchable thanks to a novel indexing technique specially designed in HIMANIS for manuscript images.  A simple, preliminary interface to this index is provided here. HOME intends to create a knowledge framework to access the European medieval documentary heritage in a meaningful way"
     helptitle = "Enter your query"
     helptext = "you can search for individual words and word combinations. More details about how to use this search interface, along with examples of queries, can be found [here](https://himanis.hypotheses.org/105)"
     # Form method
     method = "GET"
     # Form URL
-    url = "http://prhlt-kws.prhlt.upv.es/himanis/"
+    url = "http://himanis.huma-num.fr/himanis/"
     # Form input placeholder text
     label = "Keyword"
     # Form input name (sent in the request)
